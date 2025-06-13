@@ -147,8 +147,8 @@ uvicorn main:app --reload
 
 Rubén Luis Manríquez Salles  
 📬 ruben.msalles@gmail.com  
-🌐 [Portafolio Web](https://rubenmanriquez.github.io) *(opcional)*  
-🔐 [TryHackMe (Top 1%)](https://tryhackme.com/p/Eoloth) *(opcional)*
+🌐 [Portafolio Web](https://rubenmanriquez.github.io)  
+🔐 [TryHackMe (Top 1%)](https://tryhackme.com/p/Eoloth) 
 
 ---
 
