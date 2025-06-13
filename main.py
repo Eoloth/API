@@ -1,5 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
+from fastapi.responses import JSONResponse
+import re
+
 app = FastAPI()
 
 @app.get("/")
@@ -17,11 +20,15 @@ class Usuario(BaseModel):
 
 @app.post("/registro")
 def registrar_usuario(usuario: Usuario):
-    if not usuario.nombre.isalpha():
-        raite HTTPExecption(
-            status_code = 400, 
-            detail="El nombre solo debe contener ltras (sin espacios, números o símbolos".
-            )
-    return {
-        "mensaje": f"Usuario {usuario.nombre} de {usuario.edad} años registrado correctamente."
-    }
+    if not re.fullmatch(r"^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$", usuario.nombre):
+        raise HTTPException(
+            status_code=400,
+            detail="El nombre solo puede contener letras y espacios (sin números ni símbolos)."
+        )
+
+    return JSONResponse(
+        status_code=201,
+        content={
+            "mensaje": f"Usuario {usuario.nombre} de {usuario.edad} años registrado correctamente."
+        }
+    )
