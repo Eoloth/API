@@ -161,6 +161,9 @@ Tu API ya está online gracias a Render:
 - 🔐 **[Ruta protegida con JWT](https://fastapi-api-d8f0.onrender.com/usuario/protegido)**
 - 📦 **[ReDoc (documentación alternativa)](https://fastapi-api-d8f0.onrender.com/redoc)**
 
+![Render](https://img.shields.io/badge/Deployed%20on-Render-00c7b7?style=flat&logo=render)
+
+
 ---
 
 ## 📧 Contacto
