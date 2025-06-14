@@ -153,6 +153,15 @@ uvicorn app.main:app --reload
 ![Estructura del proyecto](estructura.png)
 
 ---
+## 🌐 API desplegada
+
+Tu API ya está online gracias a Render:
+
+- 🔗 **[Swagger UI (Documentación interactiva)](https://fastapi-api-d8f0.onrender.com/docs)**
+- 🔐 **[Ruta protegida con JWT](https://fastapi-api-d8f0.onrender.com/usuario/protegido)**
+- 📦 **[ReDoc (documentación alternativa)](https://fastapi-api-d8f0.onrender.com/redoc)**
+
+---
 
 ## 📧 Contacto
 
