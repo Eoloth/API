@@ -19,13 +19,19 @@ Este repositorio contiene una API desarrollada con **FastAPI**, enfocada en apre
 ## 📁 Estructura del proyecto
 
 ```
-API/
-├── main.py               # Punto de entrada de la aplicación
-├── models.py             # Modelos Pydantic para validación
-├── routes.py             # Endpoints agrupados con APIRouter
-├── utils.py              # Funciones auxiliares (API externa)
-├── requirements.txt      # Dependencias del proyecto
-└── __init__.py           # Inicializador del paquete
+app/
+├── main.py             # Punto de entrada de la aplicación
+├── models.py           # Modelos Pydantic para validación
+├── routes/
+│   └── routes.py       # Endpoints agrupados con APIRouter
+├── utils/
+│   └── pokemon.py      # Funciones auxiliares (API externa)
+└── __init__.py         # Inicializador del paquete
+├── requirements.txt
+├── .gitignore
+├── README.md
+└── estructura.png
+
 ```
 
 ---
@@ -54,7 +60,7 @@ GET /saludo/Kai
 **Respuesta**:
 ```json
 {
-  "mensaje": "Hola, Kai. Bienvenido a FastApi 👋"
+  "mensaje": "Hola, Kai. Bienvenido a FastAPI👋"
 }
 ```
 
@@ -110,7 +116,7 @@ GET /pokemon/pikachu
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tuusuario/api-fastapi-ejemplo.git
+git clone https://github.com/Eoloth/API
 cd api-fastapi-ejemplo
 ```
 
@@ -127,7 +133,7 @@ pip install -r requirements.txt
 
 4. Ejecuta el servidor:
 ```bash
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 5. Visita la documentación interactiva:
@@ -140,6 +146,11 @@ uvicorn main:app --reload
 
 ✅ Funcional y listo para mostrar en portafolio.  
 🚧 Se puede extender con base de datos, autenticación JWT o despliegue en la nube.
+
+---
+## Estructura del Proyecto
+
+![Estructura del proyecto](estructura.png)
 
 ---
 
