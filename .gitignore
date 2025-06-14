@@ -1,3 +1,28 @@
-__pycache__/
+# Entornos virtuales
 venv/
+env/
+
+# Archivos de configuración del entorno
+*.env
 .env
+
+# __pycache__ y archivos compilados
+__pycache__/
+*.py[cod]
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos temporales
+*.sqlite3
+*.bak
+*.tmp
+
+# Archivos de editor
+.vscode/
+.idea/
+*.swp
